@@ -1,0 +1,14 @@
+function handleGoalClick(goalNumber) {
+    const goals = {
+        10: "Reduced Inequalities",
+        11: "Sustainable Cities and Communities",
+        12: "Responsible Consumption and Production"
+    };
+
+    console.log(`Action: User exploring Goal ${goalNumber}`);
+    alert(`SDG Goal ${goalNumber}: ${goals[goalNumber]}`);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("SDG Goals 10, 11, and 12 loaded successfully.");
+});
