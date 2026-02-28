@@ -1,0 +1,128 @@
+:root {
+    --sdg10: #E11484; --sdg10-dark: #b50f6a;
+    --sdg11: #F99D26; --sdg11-dark: #cf7e1b;
+    --sdg12: #BF8B2E; --sdg12-dark: #a67121;
+}
+
+.h1 {
+    color: #00add8;
+    font-family: 'Bebas Neue', Helvetica, sans-serif; 
+    font-weight: normal;
+}
+
+/* Import Bebas Neue if not already linked */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.sdg-nav {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    font-family: 'Bebas Neue', Helvetica, sans-serif; /* Matches your CSS */
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem; /* Large, bold headers */
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00add8; /* Accent color from your CSS */
+}
+
+.arrow {
+    font-size: 0.7rem;
+    vertical-align: middle;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.sdg-main-title { background-color: #ffffff; font-size: 3rem; font-family: 'Bebas Neue', Helvetica, sans-serif; font-weight: normal; } 
+
+.card-text-content p {
+    color: #ffffff; 
+    font-family: 'Bebas Neue', Helvetica, sans-serif; 
+    font-weight: normal;
+}
+
+.card-text-content h2 {
+    color: #ffffff; 
+    font-size: 1.9rem; font-family: 'Bebas Neue', Helvetica, sans-serif; 
+    font-weight: normal;
+}
+
+/* Header */
+.header-accent { width: 60px; height: 4px; background: #00add8; }
+
+/* Card Styling */
+.sdg-card {
+    padding: 0 !important;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-text-content {
+    padding: 20px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sdg-full-box-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sdg-card:hover { transform: translateY(-5px); }
+
+/* Goal Colors & Borders */
+.bg-sdg10 { background-color: var(--sdg10); }
+.bg-sdg11 { background-color: var(--sdg11); }
+.bg-sdg12 { background-color: var(--sdg12); }
+
+/* Button Styles */
+.btn {
+    border: none; border-radius: 0px; padding: 12px;
+    font-size: 2rem; font-weight: 100; color: rgb(255, 255, 255) !important;
+    font-family: 'Bebas Neue', Helvetica, sans-serif; 
+}
+
+.btn-border-10 { background-color: var(--sdg10); }
+.btn-border-11 { background-color: var(--sdg11); }
+.btn-border-12 { background-color: var(--sdg12); }
+
+.btn-border-10:hover { background-color: var(--sdg10-dark) !important; color: white !important; }
+.btn-border-11:hover { background-color: var(--sdg11-dark) !important; color: white !important; }
+.btn-border-12:hover { background-color: var(--sdg12-dark) !important; color: white !important; }
